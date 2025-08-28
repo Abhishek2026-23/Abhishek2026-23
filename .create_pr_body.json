@@ -1,0 +1,6 @@
+{
+  "title": "Add CloudStego: AES-GCM encryption + LSB PNG steganography + S3 + CLI",
+  "body": "This PR adds a small Python package and CLI to encrypt data (AES-GCM with PBKDF2-derived key), hide it in a PNG via LSB, and optionally upload/download from S3.\n\n- Package: cloudstego/\n- CLI: python -m cloudstego.cli\n- Docs: CLOUDSTEGO_README.md\n- Deps: requirements.txt\n\nTested locally with a round-trip embed→extract.\n\nNotes:\n- Ensure cover image capacity is sufficient.\n- Requires AWS creds for S3 operations.",
+  "head": "cloudstego",
+  "base": "main"
+}
